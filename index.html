@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head profile="http://www.w3.org/2005/10/profile">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>HLT Lab at PSU</title>
     <script src="w3.js"></script>
 
@@ -26,12 +26,47 @@
 <body>
     <div w3-include-html="includes/menu.html"></div>
 
-    <div class="w3-main" style="margin-left:340px;margin-right:40px">
-        <h1>Lorem Ipsum.</h1>
-        <p>Lorem Ipsum.</p>
+    <div class="w3-main" style="margin-left:240px;margin-right:40px">
+
+
+    <img src="images/banner.png" style="max-width:100%; max-height:50vh; display:block; margin-top:50px"/>
+
+        <div class="w3-container" style="margin-top:20px" id="showcase">
+            <h1 class="w3-xxxlarge sw-text-color"><b>About Us</b></h1>
+            <hr style="width:50px;border:5px solid var(--bar-color)" class="w3-round">
+        </div>
+    <h1>Lorem Ipsum.</h1>
+    <p>Lorem Ipsum.</p>
+    <div w3-include-html="includes/footer.html"></div>
     </div>
 
-    <div w3-include-html="includes/footer.html"></div>
 
 </body>
 </html>
+
+
+<script>
+w3.includeHTML();
+</script>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
