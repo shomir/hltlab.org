@@ -1,0 +1,41 @@
+:root {
+    --psu-blue: rgb(30, 64, 124);
+    --bar-color: var(--psu-blue);
+}
+
+
+body,h1,h2,h3,h4,h5 {
+ font-family: "Palatino";
+}
+
+body {
+ font-size:16px;
+}
+
+.w3-half img {
+ margin-bottom: -6px;
+ margin-top:16px;
+ opacity:0.8;
+ cursor:pointer;
+}
+
+.w3-half img:hover {
+ opacity:1;
+}
+
+.sw-color,.sw-hover-color:hover {
+ color: #fff;
+ background-color: var(--psu-blue);
+}
+
+.sw-text-color, .sw-hover-text-maroon:hover {
+ color: var(--psu-blue);
+}
+
+@media (max-width:992px) {
+ .w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:5px!important;margin-right:5px!important}
+}
+
+.w3-main a {
+ color: blue!important
+}
