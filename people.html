@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>People - HLT Lab</title>
+    <script src="w3.js"></script>
+
+    <meta name="description" content="Lab at Penn State with a focus on natural language processing research.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+    </style>
+
+    <link rel="icon" type="image/png" href="https://hlt.ist.psu.edu/favicon.ico?r=1234">
+
+
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="expires" content="Sat, 31 Oct 2010 00:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
 </head>
+
 <body>
+    <div w3-include-html="includes/menu.html"></div>
+
+    <div class="w3-main" style="margin-left:240px;margin-right:40px;max-width:1024px">
+
+
+    <img src="images/banner.png" style="max-width:100%; max-height:50vh; display:block; margin-top:50px"/>
+
+        <h1 style="margin-top:40px;">People</h1>
+        <p><strong><a href="https://shomir.net">Prof. Shomir Wilson</a></strong>, Lab Director</p>
+
+        <p>Current and Former Graduate Students:</p>
+        <ul>
+            <li><a href="https://sites.psu.edu/abhijith/">Abhijith Athreya</a>, M.S. 2018, Ph.D. in progress</li>
+            <li>Baradwaj Aryasomayajula, M.S. 2018</li>
+        </ul>
+
+        <p>Current and Former Undergraduate Students:</p>
+        <ul>
+            <li><a href="http://mattihlenfield.com">Matthew Ihlenfield</a></li>
+        </ul>
+
+        <p>Current and Former Collaborators:</p>
+    <div w3-include-html="includes/footer.html"></div>
+    </div>
+
 
 </body>
 </html>
+
+
+<script>
+w3.includeHTML();
+</script>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
