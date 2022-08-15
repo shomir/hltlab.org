@@ -44,3 +44,9 @@ p {
 .w3-main a {
  color: blue!important
 }
+
+th, td {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
